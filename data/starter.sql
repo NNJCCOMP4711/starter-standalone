@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `jimsjoint`
+-- Database: `backendDB`
 --
 
 -- --------------------------------------------------------
@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `categories`
 --
 
-DROP TABLE IF EXISTS `Categories`;
+/*DROP TABLE IF EXISTS `Categories`;
 CREATE TABLE `Categories` (
   `id` varchar(1) NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `Categories` (
 INSERT INTO `Categories` (`id`, `name`, `description`, `image`) VALUES
 ('d', 'Drinks', 'Purees made from the finest of Venusian insects, government-inspected.', 'catd.png'),
 ('m', 'Mains', 'Made from only the finest ingredients found deep in the Martian jungle, and harvested or slaughtered by academy-trained druids, we bring you 45 day aged premium "meat".', 'catm.png'),
-('s', 'Sides', 'Perfect accompaniments to our mains, these side dish pairings have been exclsisvely formulated by Ben & Jerry.', 'cats.png');
+('s', 'Sides', 'Perfect accompaniments to our mains, these side dish pairings have been exclsisvely formulated by Ben & Jerry.', 'cats.png');*/
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ INSERT INTO `Menu` (`id`, `name`, `description`, `price`, `picture`, `category`)
 --
 -- Table structure for table `orderitems`
 --
-
+/*
 DROP TABLE IF EXISTS `Orderitems`;
 CREATE TABLE `Orderitems` (
   `order` int(11) NOT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE `Orders` (
   `status` varchar(1) NOT NULL,
   `total` decimal(10,2) NOT NULL,
   `customer` varchar(64) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;*/
 
 --
 -- Indexes for dumped tables
@@ -122,8 +122,9 @@ CREATE TABLE `Orders` (
 --
 -- Indexes for table `categories`
 --
+/*
 ALTER TABLE `Categories`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);*/
 
 --
 -- Indexes for table `ci_sessions`
@@ -140,14 +141,16 @@ ALTER TABLE `Menu`
 --
 -- Indexes for table `orderitems`
 --
+/*
 ALTER TABLE `Orderitems`
-  ADD PRIMARY KEY (`order`,`item`);
+  ADD PRIMARY KEY (`order`,`item`);*/
 
 --
 -- Indexes for table `orders`
 --
+/*
 ALTER TABLE `Orders`
-  ADD PRIMARY KEY (`num`);
+  ADD PRIMARY KEY (`num`);*/
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
