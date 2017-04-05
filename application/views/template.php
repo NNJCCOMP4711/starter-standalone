@@ -10,8 +10,8 @@
     <body>
 		<div class="container">
 			{navbar}
-            {content}
-            <p class="footer">Page rendered in <strong>0.0155</strong> seconds. 
+            <h3>{content}</h3>
+            <p class="footer">Page rendered in <strong>0.0155</strong> seconds.
                 {ci_version}</p>
         </div>
         {caboose_scripts}
